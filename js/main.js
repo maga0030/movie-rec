@@ -58,7 +58,7 @@ const app = {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                let base_url = data.images.base_url;
+                let base_url = data.images.secure_base_url;
                 let poster_size = data.images.poster_sizes[4];
                 app.imgURL = base_url + poster_size;
             })

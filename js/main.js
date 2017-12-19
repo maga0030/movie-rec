@@ -188,7 +188,7 @@ const app = {
             year.appendChild(document.createTextNode(" (" + movie_year + ")"));
             
             if (movie.poster_path != null) {
-                poster.src = "http://image.tmdb.org/t/p/w500" + movie.poster_path;
+                poster.src = app.imgURL + movie.poster_path;
             } else {
                 poster.src = "img/no_poster.png";
             }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <main>
+        <header class="search">
+           <div class="logo">
+               <img id="logo" src="img/vhs-tape_large.png" alt="logo" title="Logo"> 
+           </div>
+           <div class="search-bar">
+               <img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md no-display" data-direction="left" alt="Back Button" title="Back"/>
+                <img id="search-button" class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search"/>
+                <input type="text" id="search-input" placeholder="search" />
+           </div>            
+        </header>
+        
+        <div class="page active" id="search-results">
+            <section class="title"></section>
+            <section class="content"></section>
+            <div class="attribution not">
+                <img src="./img/poweredbyMovieDB.png" alt="The Movie DB" />
+            </div>
+        </div>
+        
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content"></section>
+            <div class="attribution">
+                <img src="./img/poweredbyMovieDB.png" alt="The Movie DB" />
+            </div>
+        </div>
+    </main>
+    
+    <div class="loading not">
+        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular" alt="loading"/>
+    </div>
+    
+    
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

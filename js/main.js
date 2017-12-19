@@ -1,5 +1,5 @@
 const app = {
-    URL: 'https://api.themoviedb.org/3/',
+    URL: 'http://api.themoviedb.org/3/',
     imgURL: '',
     pages: [],
     show: new Event('show'),
